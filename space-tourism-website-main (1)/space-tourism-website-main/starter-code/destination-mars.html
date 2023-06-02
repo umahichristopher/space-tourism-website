@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="destination-europa.html.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    html {
+    overflow-x: hidden;
+    background-image: url(assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.main-contentb {
+  margin-top: 10%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+
+}
+.flex-item {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+.parent-bd {
+  display: flex;
+  gap: 400px;
+}
+.bd-big {
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+}
+.line {
+  margin-top: 16px;
+}
+.parent-small {
+  display: flex;
+}
+.parent-small-two {
+  font-size: 10px;
+  font-weight: 100;
+}
+#bgimage {
+  width: 550%;
+
+}
+.paregraph-content {
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  
+}
+@media only screen and (max-width:500px) {
+
+/* For mobile phones: */
+html {
+  overflow-x: hidden;
+  background-image: url(assets/destination/background-destination-mobile.jpg);
+}
+.parent-bd {
+  flex-direction: column;
+  gap: 100px;
+}
+.main-contentb {
+  margin-top: 10%;
+  margin-bottom: 50% !important;
+  margin-left: 3% !important;
+    margin-right: 3% !important;
+
+}
+#bgimage {
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+}
+.bd-round {
+  justify-content: center;
+  display: flex;
+}
+.flex-item li a {
+  padding: 8px;
+  font-size: 16px;
+}
+.flex-item {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 12px;
+}
+.num {
+  font-size: 13px !important;
+  color: rgb(144, 137, 128);
+  font-weight: 700;
+}
+.parent-small {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.bd-big {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+}
+@media only screen and (max-width:800px) {
+  html {
+    background-image: url(assets/destination/background-destination-tablet.jpg);
+  }
+  .main-contentb {
+    margin-bottom: 50px;
+    margin-top: 10%;
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+.parent-bd {
+  flex-direction: column;
+  gap: 100px;
+}
+#bgimage {
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+}
+.bd-round {
+  justify-content: center;
+  display: flex;
+}
+.flex-item li a {
+  padding: 10px;
+  font-size: 18px;
+}
+.flex-item {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 14px;
+}
+.num {
+  font-size: 15px !important;
+  color: rgb(144, 137, 128);
+  font-weight: 800;
+}
+.parent-small {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.bd-big {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="assets/shared/logo.svg" alt="">
+    </div>
+    <nav class="navbar">
+      <ul class="flex-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Crew</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="icon"><img src="assets/home/7124209_menu_icon (2).png"></button>
+  </header>
+  <main class="main-contentb">
+    <div class="parent-bd">    <!---CONTAINER PARENT-->
+      <div class="bd-round">
+        <img id="bgimage" src="assets/destination/image-mars.webp" alet="image">
+      </div>
+      <div class="bd-cotnent">
+        <div> <!----ANOTHER NEW DIV-->
+          <ul class="flex-item">
+            <li><a id="mylink" href="destination-europa.html">Europa</a></li>
+            <li><a id="mylink" href="destination-mars.html">mars</a></li>
+            <li><a id="mylink" href="destination-moon.html">moon</a></li>
+            <li><a id="mylink" href="#">titan</a></li>
+          </ul>
+          <h1 class="bd-big">Mars</h1>
+          <p class="paregraph-content">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+            the tallest planetary mountain in our solar system. It’s two and a half times 
+            the size of Everest!
+          </p>
+          <hr class="line">
+
+          <div class="parent-small"> <!---small parent in this section-->
+            <div style="display: block;" class="parent-small"><!----first child -->
+              <h5 class="text">Avg. distance</h5>
+              <h5 class="num">34.32</h5>
+
+
+            </div>
+            <div style="display: block;" class="parent-small-two"> <!---secondary child -->
+              <h5 class="text">Est. travel time</h5>
+              <h5 class="num">3 years</h5>
+
+              
+            </div>
+          </div> <!--small parent end here -->
+
+        </div> <!---AND THIS IS THE END-->
+
+
+
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+</body>
+</html>

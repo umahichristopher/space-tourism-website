@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/shared/logo.svg" alt="">
+    </div>
+    <nav class="navbar">
+      <ul class="flex-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination-europa.html">Destination</a></li>
+        <li><a href="crew-specialist.html">Crew</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </nav>
+    <button class="icon" onclick="toggleMenu()"><img src="assets/home/7124209_menu_icon (2).png"></button>
+  </header>
+
+  <main class="main-content"> <!----->
+    <div class="parent-bg">  <!---CONTAINER PARENT-->
+   <div class="bg-content">
+    <h5><span>So</span> you want to travel to</h5>
+    <h1>Space</h1>
+    <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+      outer space and not hover kind of on the edge of it. Well sit back, and relax 
+      because we’ll give you a truly out of this world experience!</p>
+
+   </div>
+   <div class="bg-round"> <!----LAST DIEV CLASS-->
+
+    <h3 class="colored">Explore</h3>
+   </div>
+  </div>
+  </main>
+  
+    <script>
+  function  myFunction() {
+    var x = Document.getElementbyclass("flex-list");
+    if (x.className === "flex-list") {
+      x.className = "flex-list";
+    }
+  }
+
+  </script>
+</body>
+</html>

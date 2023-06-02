@@ -1,0 +1,230 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-style: normal;
+    text-decoration: none;
+
+}
+html {
+    overflow-x: hidden;
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul li  {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  .flex-list {
+    display: flex;
+    padding: 0;
+  }
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 9px;
+    padding-left: 20px;
+  }
+  button {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .parent-bg {
+    margin-top: 50px;
+    gap: 200px;
+    display: flex;
+  }
+  span {
+    letter-spacing: normal;
+    font-weight: 800;
+    color: rgb(106, 101, 95);
+  }
+  h5 {
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-size: 18px;
+  }
+  h1 {
+    letter-spacing: 13px;
+    line-height: 120px;
+    font-weight: 100;
+    color: #fff;
+    font-size: 90px;
+  }
+  p {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+
+
+  .colored {
+    letter-spacing: 3px;
+    font-weight: 100;
+    margin-top: 100px;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 30px;
+    background-color: #fff;
+  }
+  #mylink {
+    color: blue;
+  }
+  #mylink:hover {
+    color: green;
+    border-bottom: 2px solid blue;
+  }
+ .flex-list {
+  font-size: 15px;
+ }
+ .flex-list li a:hover {
+  border-bottom: 2px solid white;
+ }
+
+ @media only screen and (max-width:500px) {
+
+  /* For mobile phones: */
+  html {
+    overflow-x: hidden;
+    background-image: url(assets/home/background-home-mobile.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+  .main-content {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .parent-bg {
+    margin-top: 50px;
+    gap: 0px;
+    flex-direction: column;
+  }
+  p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 2px;
+  } 
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 70px;
+  }
+  h5 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+  .bg-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .icon {
+    background-color: black;
+    cursor: pointer;
+    margin-right: 15% !important;
+    width: 0%;
+    height: 0;
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .flex-list.active {
+    display: block;
+  }
+  .flex-list {
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  html {
+    background-image: url(assets/home/background-home-tablet.jpg);
+    background-position: center;
+  }
+  .main-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .parent-bg {
+    margin-top: 60px;
+    gap: 0px;
+    flex-direction: column;
+  }
+  p {
+    font-size: 16px;
+    color: #d2cece;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 2px;
+  } 
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 70px;
+  }
+  h5 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+  .bg-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .icon {
+    background-color: black;
+    cursor: pointer;
+    margin-right: 10%;
+    width: 0%;
+    height: 0;
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
